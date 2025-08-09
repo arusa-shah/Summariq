@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gradient-to-br from-pastelBlue via-pastelPink to-pastelPurple min-h-screen;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  }
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #FFFACD;
+}
+::-webkit-scrollbar-thumb {
+  background: #C3B1E1;
+  border-radius: 8px;
+}
+
+input:focus, textarea:focus, button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #A7C7E7;
+}
+
+@media (max-width: 640px) {
+  .max-w-xl, .max-w-md {
+    max-width: 98vw !important;
+    padding: 1rem !important;
+}
+  .p-8, .p-10 {
+    padding: 1.5rem !important;
+  }
+  .rounded-3xl {
+    border-radius: 1.25rem !important;
+  }
+}
